@@ -1,0 +1,82 @@
+#minus{
+    font-size: 32px;
+    padding: 20px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#plus{
+    font-size: 32px;
+    padding: 20px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#counter{
+    font-size: 40px;
+    display: inline-block;
+    /* vertical-align: text-bottom; */
+}
+
+.counterClass{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+}
+
+.disable{
+    cursor: not-allowed !important;
+}
+
+.rowData{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    padding: 10px;
+}
+
+.colData{
+    width: 300px;
+    text-align: center;
+    border: 3px solid #ededed;
+    border-radius: 9px;
+    padding: 12px;
+}
+
+.productImage{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.productDescription{
+    margin-top: 34px;
+    text-align: start;
+}
+.productDescription h4{
+    padding: 0
+}
+.rating{
+    float: left;
+    background: #388e3c;
+    padding: 6px 10px 6px 10px;
+    color: #fff;
+    border-radius: 6px;
+    margin: 0;
+    width: 38px;
+}
+
+.priceRatingClass{
+    display: table-caption;
+}
+
+.price{
+    float: left;
+    margin-top: 10px;
+    font-size: 25px;
+
+}

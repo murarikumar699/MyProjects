@@ -1,0 +1,97 @@
+<style>
+    .messsageOverlay{
+        position: absolute;
+        right: 16px;
+        bottom: 0px;
+        margin: 0;
+        border: 0.1px solid #bcbaba;
+        border-radius: 6px;
+        background: #fff;
+        width: 275px;
+        transition: 0.6s;
+    }
+    .open{
+        top:112px;
+        transition: 0.6s;
+    }
+    
+    #ember18 {
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+    }
+
+    .displayOverlay{
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;   
+        padding: 9px;     
+    }
+    .displayOverlay:hover{
+        background-color: #f2f2f2;        
+    }
+    .messsageOverlay hr{
+        margin: 0;
+    }
+    .nameList{
+        padding: 20px;
+    }
+</style>
+<div class="messsageOverlay" id="messsageOverlay">
+    <div class="displayOverlay" onclick="openChatBot();">
+        <div class="displayOverlay">
+            <img src="https://media.licdn.com/dms/image/D4D03AQHcEwa-2ViD6A/profile-displayphoto-shrink_100_100/0/1697378686882?e=1703116800&amp;v=beta&amp;t=H_ZgY8aFxrlSlFNr1EIxssKQgpXdLNMbXZyE_tquJ80" alt="MURARI KUMAR" id="ember18">
+            <p style="margin-left: 13px;margin-top: 9px;font-weight: 600;">Messaging</p>
+        </div>
+        <div style="cursor: pointer;" onclick="openChatBot();">
+            <p style="margin-top: 18px;margin-right: 9px;">Up</p>
+        </div>        
+    </div>
+    <hr style="margin: 0;">
+    <div id="chatList">
+
+    </div>
+    
+</div>
+
+
+<script>
+    function openChatBot(){
+        let messsageOverlay = document.getElementById("messsageOverlay");
+        messsageOverlay.classList.toggle('open');
+        let people = `<div class="displayOverlay nameList">
+                        <p>Dheeraj Gautam</p>
+                        </div>
+                        <hr>
+                        <div class="displayOverlay nameList">
+                            <p>Pankaj Sharma</p>
+                        </div>
+                        <hr>
+                        <div class="displayOverlay nameList">
+                            <p>Jeevan Kumar</p>
+                        </div>
+                        <hr>
+                        <div class="displayOverlay nameList">
+                            <p>Subhash Kumar</p>
+                        </div>
+                        <hr>
+                        <div class="displayOverlay nameList">
+                            <p>Gopi s.</p>
+                        </div>
+                        <hr>
+                        <div class="displayOverlay nameList">
+                            <p>Minal Thakur</p>
+                        </div>
+                        <hr>`;
+
+        
+        let chatList = document.getElementById('chatList');
+        console.log("chatList.innerHTMLchatList.innerHTML",chatList.innerHTML.length);
+        if(chatList.innerHTML.length <= 6){
+            chatList.innerHTML = people;
+        }else{
+            chatList.innerHTML = "";
+        }
+        
+    }
+</script>

@@ -1,0 +1,151 @@
+.mainDiv{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border: 0.01cm solid black;   
+    margin-top: 40px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+
+body{
+    /* display: flex; */
+        padding: 0;
+        margin: 0;
+    }
+
+.inputClass{
+    border: none;
+}
+
+
+#maindivAfterBody{
+    justify-content: center;
+    box-shadow:0px 0px 18px 1px rgba(0,0,0,0.75);
+    margin: 20px;
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+
+
+
+
+/* sidebar css */
+ @media (min-width: 320px) and (max-width: 1024px) {
+
+    .hrForSidebar{
+        display: block;
+    }
+
+    #header{
+        background-color: #f2f2f2;
+        position: fixed;
+        display: block;
+        left: "-300px";
+        top: 37px;
+        right: 100%;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    #menuBar{
+        width: 25px;
+        margin-left: 10px;
+    }
+    .headerItem{
+        color: #3f6ec4;
+        font-size: xx-large;
+        font-family: fantasy;          
+        border-bottom: 1px solid rgb(10 10 10 / 24%);
+    }
+    .headerItem p{
+        padding-left: 10px;
+    }
+   
+    .headerItem p:hover{
+        color: black;
+        font-size: xx-large;
+        font-family: fantasy; 
+        color: #0033ff;
+        cursor: pointer;
+    }
+
+    .mainContent{
+        position: absolute;
+        left: 10px;
+        right: 0px;
+    }
+
+    .afterBodyDiv{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 1022 !important;
+    }
+}
+  
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    #header{
+        display: flex;
+        justify-content: space-around;
+        background-color: #f2f2f2;
+    }
+    
+    .headerItem{
+        color: #3f6ec4;
+        font-size: large;
+        font-family: fantasy;  
+        margin-left: 10px; 
+    }
+
+    .headerItem p:hover{
+        color: black;
+        font-size: large;
+        font-family: fantasy; 
+        color: #0033ff;
+        cursor: pointer;
+    }
+    
+    #menuBar{
+        display: none;
+    }
+
+    .hrForSidebar{
+        display: none;
+    }
+
+    .mainContent{
+        margin-left: 10px;
+        padding: 5px;
+    }
+}
+
+/* @media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
+    }
+}
+  
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        background-color: blue;
+    }
+}
+  
+@media (min-width: 1025px) and (max-width: 1280px){
+    body {
+        background-color: green;
+    }
+}
+  
+@media (min-width: 1281px) {
+    body {
+        background-color: white;
+    }
+} */
+

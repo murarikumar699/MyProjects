@@ -1,0 +1,85 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.tab{
+  position: absolute;
+  display: flex;
+  font-size: x-large;
+  font-family: serif;
+  cursor: pointer;
+}
+
+.tabList{
+  border: 0.1px solid black;
+  padding: 15px 36px 15px 36px;
+  background: #83838354;
+  border-radius: 3px;
+  border-right: none;
+  border-bottom: none;
+  
+  
+}
+
+.tabList:last-child{
+  border: 0.1px solid black;
+}
+
+.tabList.active{
+  border: 0.1px solid black;
+  padding: 15px 36px 15px 36px;
+  border-radius: 0;
+  border-bottom: none;
+  background: #fff;
+}
+
+.tabListData{
+  position: absolute;
+  top: 115px;
+  border: 1px solid black;
+  width: 346px;
+}
+
+.tabAddData{
+    position: absolute;
+    top: 115px;
+    border: 1px solid black;
+    width: 55%;
+}
+
+.tabAddData .addUserData{
+  padding: 20px;
+}
+
+
+.tabListData:last-child{
+  /* border-bottom: none; */
+}
+
+.tabListData .listUlTag{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabListData .listUlTag li{
+  padding: 20px;
+  /* border-bottom: 1px solid; */
+}
+
+/* .tabListData .listUlTag li:hover{
+  background-color: #f2f2f2;
+  cursor: pointer;
+} */
+
+.deleteButton{
+  height: 36px;
+  margin-top: 16px;
+  margin-right: 13px;
+}

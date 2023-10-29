@@ -1,0 +1,21 @@
+.boxes{
+    margin-top: 30px;
+}
+
+.divRow{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.divcol{
+    height: 140px;
+    width: 228px;
+    border: 2px solid black;
+}
+
+.greenColor{
+    background-color: green;
+}

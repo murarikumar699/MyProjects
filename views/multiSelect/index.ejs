@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <title>Comment</title>
+    <style>
+        #selectBox{
+            margin-top: 100px;
+            margin-left: 498px;
+            width: 514px;
+            border-radius: 5px;
+            border: 1px solid;
+            height: 50px;
+            cursor: text;
+        }
+
+        #optionBoxDiv{
+            border: 1px solid;
+            margin-left: 498px;
+            width: 514px;
+        }
+
+        .optionBox p{
+            padding-left: 18px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin: 0;
+        }
+        .optionBox:hover{
+            background-color: #5897fb;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .active{
+            background-color: #5897fb;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="continer">
+        <div id="selectBox">           
+        </div>
+        <div id="optionBoxDiv" class="">
+            <div class="optionBox active">
+                <p>Apple</p>
+            </div> 
+            <div class="optionBox">
+                <p>Ball</p>
+            </div> 
+            <div class="optionBox">
+                <p>Cat</p>
+            </div> 
+            <div class="optionBox">
+                <p>Dog</p>
+            </div> 
+        </div>
+        
+    </div>
+    <script src="/javascripts/bootstrap.bundle.min.js"></script>
+    <script src="/javascripts/jquery.min.js"></script>
+
+    <script>
+        let selectBox = document.getElementById('selectBox');
+        let optionBoxDiv = document.getElementById('optionBoxDiv');
+        selectBox.addEventListener('click', function(){
+            optionBoxDiv.classList.toggle('d-none');
+        })
+    </script>
+</body>
+</html>

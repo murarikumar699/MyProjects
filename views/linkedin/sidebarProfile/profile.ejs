@@ -1,0 +1,133 @@
+<style>
+    #profileDiv{
+        width: 223px;
+        height: auto;
+        background-color: #fff;
+        margin-left: 200px;
+        margin-top: 30px;
+        border-radius: 0.8rem;
+        text-align: center;
+        border: 0.1px solid grey;
+    }
+
+    #profileImage{
+        background-position: center;
+        background-size: cover;
+        display: block;
+        height: 56.25px;
+        margin-top: -1.2rem;
+        margin-left: -1px;
+        border-radius: 0.6rem 0.6rem 0px 0px;
+        border: 0.1px solid grey;
+        
+    }
+
+    #module__member_photo {
+        border-radius: 50%;
+        margin: -38px auto 1.2rem;
+        border: 2px solid #fff
+    }
+
+    .t-bold{
+        font-weight:600;
+        color: rgba(0,0,0,.9);
+        font-family: system-ui;
+    }
+
+    .identity-headline{
+        margin-top: 0.4rem!important;
+        --artdeco-reset-typography_getFontSize: 1.2rem;
+        --artdeco-reset-typography_getLineHeight: 1.33333;
+        font-size: 14px;
+        color: #686262;
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    .feedView{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 10px;
+        font-size: 13px;
+        font-family: sans-serif;
+        color: #6d6a6a;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+
+    .feedView:hover{
+        background-color: #f2f2f2;
+    }
+
+    p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .feedViewPremium{
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 10px;
+        font-size: 13px;
+        font-family: sans-serif;
+        color: #6d6a6a;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+    
+    .myItems{
+        padding: 14px;
+        font-size: 14px;
+        padding-bottom: 30px;
+        border-radius: 0 0 0.8rem 0.8rem;
+    }
+
+    .myItems p{
+        float: left;
+        
+    }
+
+    .myItems:hover{
+       background-color: #f2f2f2;
+    }
+</style>
+
+<div id="profileDiv">
+    <img id="profileImage" src="https://media.licdn.com/dms/image/D4D16AQGpePNCgeZsvw/profile-displaybackgroundimage-shrink_200_800/0/1675186659163?e=1703116800&v=beta&t=G1u-lxjS684PYlY-oifrwDpCBIUNVVmELLxJP61gxe0" alt="">
+    <div>
+        <img width="64" src="https://media.licdn.com/dms/image/D4D03AQHcEwa-2ViD6A/profile-displayphoto-shrink_100_100/0/1697378686882?e=1703116800&v=beta&t=H_ZgY8aFxrlSlFNr1EIxssKQgpXdLNMbXZyE_tquJ80" loading="lazy" height="64" alt="Photo of MURARI KUMAR" id="module__member_photo">
+    </div>
+    <div class="t-bold">MURARI KUMAR</div>
+
+    <p class="identity-headline">
+        Infosys | Node js | MySQL | API | backend developer | web development | Git | sockets
+    </p>
+    <hr>
+    
+
+    <div>
+        <div class="feedView">
+            <p>Profile Viewers</p>
+            <p>84</p>
+        </div>
+        <div class="feedView">
+            <p>Post Impression</p>
+            <p>30</p>
+        </div>
+    </div>
+
+    <hr>
+    <div class="feedViewPremium">
+        <p>Access exclusive tools & insights</p> 
+        <span style="text-decoration: underline;color:black;font-weight: 600;"> Reactivate Premium: 50% Off</span> 
+    </div>
+    <hr style="margin-bottom: 0;">
+
+    <div class="myItems">
+         <p>My Items</p>
+    </div>
+</div>

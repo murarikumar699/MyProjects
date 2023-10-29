@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <HTML>
+    <head>
+        <title>Table</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+    </head>
+    <body id="bodyId">
+        <div id="maindivAfterBody" >
+        
+                <button style="position: absolute;border-radius: 2px;
+                border: 1px solid;width: 87px;height: 38px;top: 25px;" onclick="showNewTable()">Add</button>
+                <table style="border: 1px solid black;width: 100%;" id="mainTable">
+                    <thead style="border: 1px solid black;">
+                        <td style="border: 1px solid black;padding: 10px;">Name</td>
+                        <td style="border: 1px solid black;">Quantity</td>
+                        <td style="border: 1px solid black;padding: 10px;">Unit Price</td>
+                        <td style="border: 1px solid black;padding: 10px;">Tax</td>
+                        <td style="border: 1px solid black;padding: 10px;">Total Price</td>
+                        <td style="border: 1px solid black;padding: 10px;">Action</td>
+                    </thead>
+                    <tbody style="border: 1px solid black;">
+                        
+                    </tbody>
+                </table>
+
+                <br>
+                <div id="appendedTable"></div>
+        </div>
+
+        <div style="justify-content: center;
+        box-shadow:0px 0px 18px 1px rgba(0,0,0,0.75);margin: 20px;padding: 50px;">
+            <div>
+                <label for="totalPrice">Sum Total Price :-</label>
+                <b style="color: green;"><input type="text" value="0" style="border: none;" disabled id="sumTotalPrice"></b>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+      <script src="js/table.js"></script>
+    </body>
+ </HTML>

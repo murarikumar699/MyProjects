@@ -1,0 +1,44 @@
+nav{
+    padding: 12px 70px 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #fff;
+}
+
+nav div p{
+    margin: 0;
+    font-size: 13px;
+}
+
+#searchDiv input{
+    width: 230px;
+    background: #edf3f7;
+    border: navajowhite;
+    padding: 12px;
+    font-size: medium;
+    margin-top: 4px;
+}
+
+#searchDiv input:focus{
+    width: 400px;
+    transition: 0.3s;
+}
+
+#ember18{
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+}
+
+nav div{
+    text-align: center;
+}
+
+.rightMenu{
+    display: flex;
+    width: 40%;
+    margin-right: 166px;
+    justify-content: space-between;
+}
+
